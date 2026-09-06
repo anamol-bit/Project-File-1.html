@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Chapter 6 – Web Technology I</title>
+</head>
+<body>
+
+  <h1>Chapter 6: Web Technology I (8 hour)</h1>
+
+  <!-- =================== 6.1 =================== -->
+  <b>6.1 Introduction: web development Introduction</b>
+  <p>Web development is the process of creating websites and web applications. It involves designing, building, and maintaining the front-end (what users see) and back-end (server-side logic) of a website. The web is built on technologies like HTML, CSS, JavaScript, and various server-side languages. Web development can be broadly classified into front-end development, back-end development, and full-stack development.</p>
+
+  <!-- 6.2 -->
+  <b>6.2 Web browsers and search Engines</b>
+  <ul>
+    <li><b>Web Browser:</b> A software application used to access, retrieve, and view content on the World Wide Web. Examples include Google Chrome, Mozilla Firefox, Microsoft Edge, Safari, and Opera. Browsers interpret HTML, CSS, and JavaScript to display web pages.</li>
+    <li><b>Search Engine:</b> A web-based tool that helps users find information on the internet by searching through indexed web pages. Examples include Google, Bing, Yahoo, and DuckDuckGo. Search engines use algorithms to rank results based on relevance.</li>
+  </ul>
+
+  <!-- 6.3 -->
+  <b>6.3 Overview of various Internet &amp; web technologies</b>
+  <p>Internet and web technologies include the following:</p>
+  <ul>
+    <li><b>HTTP/HTTPS:</b> Hypertext Transfer Protocol (Secure) - protocol for transferring web pages.</li>
+    <li><b>URL:</b> Uniform Resource Locator - the address of a web page.</li>
+    <li><b>HTML:</b> HyperText Markup Language - used to structure web content.</li>
+    <li><b>CSS:</b> Cascading Style Sheets - used to style web pages.</li>
+    <li><b>JavaScript:</b> A scripting language that adds interactivity to web pages.</li>
+    <li><b>Web Servers:</b> Software/hardware that hosts websites (Apache, Nginx, IIS).</li>
+    <li><b>Web Hosting:</b> Service that provides storage space for websites.</li>
+    <li><b>DNS:</b> Domain Name System - translates domain names to IP addresses.</li>
+  </ul>
+
+  <!-- 6.4 -->
+  <b>6.4 Content Management System (CMS)</b>
+  <p>A Content Management System (CMS) is a software application that allows users to create, manage, and modify digital content without needing technical knowledge of web programming. CMS platforms provide a user-friendly interface for adding text, images, videos, and managing website structure.</p>
+  <p>Popular CMS examples include WordPress, Joomla, Drupal, and Shopify. Features include:</p>
+  <ul>
+    <li>WYSIWYG (What You See Is What You Get) editors.</li>
+    <li>Template-based design.</li>
+    <li>User and permission management.</li>
+    <li>Search engine optimization (SEO) tools.</li>
+    <li>Plugins and extensions for added functionality.</li>
+  </ul>
+
+  <hr />
+
+  <!-- =================== 6.4 HTML =================== -->
+  <b>6.4 HTML: The Language of the web</b>
+  <p>HTML (HyperText Markup Language) is the standard markup language used to create and structure web pages. It uses tags to define elements like headings, paragraphs, links, images, and tables. HTML is the foundation of all web pages.</p>
+
+  <!-- 6.4.1 -->
+  <b>6.4.1 Objectives</b>
+  <p>The objectives of HTML include:</p>
+  <ul>
+    <li>To structure web content in a logical and organized manner.</li>
+    <li>To create hyperlinks that connect different web resources.</li>
+    <li>To embed multimedia elements like images, audio, and video.</li>
+    <li>To enable the creation of interactive web forms.</li>
+    <li>To provide a foundation for CSS and JavaScript to enhance web pages.</li>
+  </ul>
+
+  <!-- 6.4.2 -->
+  <b>6.4.2 Structure of HTML</b>
+  <p>An HTML document has a standard structure:</p>
+  <pre>
+    &lt;!DOCTYPE html&gt;
+    &lt;html&gt;
+      &lt;head&gt;
+        &lt;title&gt;Page Title&lt;/title&gt;
+      &lt;/head&gt;
+      &lt;body&gt;
+        &lt;h1&gt;Heading&lt;/h1&gt;
+        &lt;p&gt;This is a paragraph.&lt;/p&gt;
+      &lt;/body&gt;
+    &lt;/html&gt;
+  </pre>
+
+  <!-- 6.4.3 -->
+  <b>6.4.3 Published and Hosting</b>
+  <p><b>Published:</b> To make a website available to the public, the HTML files must be published (uploaded) to a web server.</p>
+  <p><b>Web Hosting:</b> A service that provides storage space on a server for websites, making them accessible on the internet. Types include shared hosting, VPS, dedicated hosting, and cloud hosting.</p>
+
+  <!-- 6.4.4 -->
+  <b>6.4.4 HTML Tags vs. Attributes</b>
+  <ul>
+    <li><b>Tag:</b> The basic building block of HTML. Tags are enclosed in angle brackets &lt; &gt;. Most tags have an opening &lt;tag&gt; and closing &lt;/tag&gt;. Example: &lt;p&gt; and &lt;/p&gt;.</li>
+    <li><b>Attribute:</b> Additional information about an HTML element. Attributes are added to the opening tag. They provide properties like color, size, alignment, and links. Syntax: &lt;tag attribute="value"&gt;. Example: &lt;img src="image.jpg" alt="description"&gt;.</li>
+  </ul>
+
+  <!-- 6.4.5 -->
+  <b>6.4.5 Basic Tags of HTML: HTML, HEAD, TITLE, BODY (Setting the Fore color and Background color, Background Image, Background Sound)</b>
+  <ul>
+    <li><b>&lt;html&gt;:</b> The root element that wraps the entire HTML document.</li>
+    <li><b>&lt;head&gt;:</b> Contains metadata, title, and links to stylesheets/scripts. Not visible on the page.</li>
+    <li><b>&lt;title&gt;:</b> Sets the title that appears on the browser tab.</li>
+    <li><b>&lt;body&gt;:</b> Contains the visible content of the web page.
+      <ul>
+        <li><b>Fore color:</b> Set using <code>text="color"</code> in the body tag. Example: &lt;body text="red"&gt;.</li>
+        <li><b>Background color:</b> Set using <code>bgcolor="color"</code>. Example: &lt;body bgcolor="blue"&gt;.</li>
+        <li><b>Background Image:</b> Set using <code>background="image.jpg"</code>. Example: &lt;body background="bg.jpg"&gt;.</li>
+        <li><b>Background Sound:</b> Set using <code>&lt;bgsound src="sound.wav"&gt;</code> (old tag, not HTML5).</li>
+      </ul>
+    </li>
+  </ul>
+
+  <!-- 6.4.6 -->
+  <b>6.4.6 Heading tag (H1 to H6) and attributes(ALIGN)</b>
+  <p>The heading tags (&lt;h1&gt; to &lt;h6&gt;) define headings. H1 is the largest/most important, and H6 is the smallest.</p>
+  <ul>
+    <li><b>ALIGN attribute:</b> Sets the alignment of the heading. Values: left (default), center, right, justify. Example: &lt;h1 align="center"&gt;Centered Heading&lt;/h1&gt;.</li>
+  </ul>
+
+  <!-- 6.4.7 -->
+  <b>6.4.7 FONT tag and Attributes (Size: 1 to 7 levels, BASEFONT, SMALL, BIG, COLOR)</b>
+  <p>The &lt;font&gt; tag is used to control the appearance of text (deprecated in HTML5, but still used in older pages).</p>
+  <ul>
+    <li><b>Size:</b> Values 1 (smallest) to 7 (largest). Example: &lt;font size="5"&gt;Text&lt;/font&gt;.</li>
+    <li><b>BASEFONT:</b> Sets the default font size for the page.</li>
+    <li><b>SMALL:</b> Reduces the font size. &lt;small&gt;text&lt;/small&gt;.</li>
+    <li><b>BIG:</b> Increases the font size. &lt;big&gt;text&lt;/big&gt;.</li>
+    <li><b>COLOR:</b> Sets the text color. Example: &lt;font color="red"&gt;Text&lt;/font&gt;.</li>
+  </ul>
+
+  <!-- 6.4.8 -->
+  <b>6.4.8 Paragraph Formatting (P)</b>
+  <p>The &lt;p&gt; tag defines a paragraph. It adds vertical space before and after the text.</p>
+
+  <!-- 6.4.9 -->
+  <b>6.4.9 Break Line BR</b>
+  <p>The &lt;br&gt; tag inserts a line break (carriage return). It is a self-closing tag.</p>
+
+  <!-- 6.4.10 -->
+  <b>6.4.10 Comment In HTML</b>
+  <p>Comments are ignored by the browser and are used to explain code. Syntax: &lt;!-- This is a comment --&gt;</p>
+
+  <!-- 6.4.11 -->
+  <b>6.4.11 Formatting text (B, I, U, Mark, Sup, Sub, EM, BLOCKQUOTE, PREFORMATTED)</b>
+  <ul>
+    <li><b>&lt;b&gt;:</b> Bold text.</li>
+    <li><b>&lt;i&gt;:</b> Italic text.</li>
+    <li><b>&lt;u&gt;:</b> Underlined text.</li>
+    <li><b>&lt;mark&gt;:</b> Highlighted text (background color).</li>
+    <li><b>&lt;sup&gt;:</b> Superscript (e.g., x<sup>2</sup>).</li>
+    <li><b>&lt;sub&gt;:</b> Subscript (e.g., H<sub>2</sub>O).</li>
+    <li><b>&lt;em&gt;:</b> Emphasized text (usually italic).</li>
+    <li><b>&lt;blockquote&gt;:</b> Indented block of text, often used for quotations.</li>
+    <li><b>&lt;pre&gt;:</b> Preformatted text, preserves spaces and line breaks.</li>
+  </ul>
+
+  <!-- 6.4.12 -->
+  <b>6.4.12 Ordered List - OL (START, Type: 1, I, A, a; START, VALUE)</b>
+  <ul>
+    <li><b>&lt;ol&gt;:</b> Creates an ordered (numbered) list. Items are defined with &lt;li&gt;.</li>
+    <li><b>START:</b> Specifies the starting number. Example: &lt;ol start="5"&gt;.</li>
+    <li><b>TYPE:</b> Specifies the numbering style.
+      <ul>
+        <li><b>1:</b> Numbers (1, 2, 3...).</li>
+        <li><b>I:</b> Roman numerals (I, II, III...).</li>
+        <li><b>i:</b> Roman numerals (i, ii, iii...).</li>
+        <li><b>A:</b> Uppercase letters (A, B, C...).</li>
+        <li><b>a:</b> Lowercase letters (a, b, c...).</li>
+      </ul>
+    </li>
+    <li><b>VALUE:</b> Sets the number for a specific &lt;li&gt; item.</li>
+  </ul>
+
+  <!-- 6.4.13 -->
+  <b>6.4.13 Unordered List - UL (Bullet Type: Disc, Circle, Square, DL, DT, DD)</b>
+  <ul>
+    <li><b>&lt;ul&gt;:</b> Creates an unordered (bulleted) list. Items are defined with &lt;li&gt;.</li>
+    <li><b>Bullet Type:</b>
+      <ul>
+        <li><b>Disc:</b> Filled circle (default).</li>
+        <li><b>Circle:</b> Hollow circle.</li>
+        <li><b>Square:</b> Solid square.</li>
+      </ul>
+    </li>
+    <li><b>&lt;dl&gt;:</b> Definition list (description list). Contains &lt;dt&gt; (term) and &lt;dd&gt; (definition/description).</li>
+  </ul>
+
+  <!-- 6.4.14 -->
+  <b>6.4.14 ADDRESS Tag and Creating Links</b>
+  <p><b>&lt;address&gt;:</b> Defines contact information (author, address, email). Usually displayed in italics.</p>
+  <p><b>Creating Links (Hyperlinks):</b> Use the &lt;a&gt; (anchor) tag.</p>
+  <ul>
+    <li><b>Link to other HTML documents:</b> &lt;a href="page.html"&gt;Link Text&lt;/a&gt;.</li>
+    <li><b>Link to places in the same document:</b> Use id attribute and #. Example: &lt;a href="#section1"&gt;Go to Section 1&lt;/a&gt;.</li>
+    <li><b>Link to places in other HTML documents:</b> &lt;a href="other.html#section2"&gt;Link Text&lt;/a&gt;.</li>
+    <li><b>Anchor Tag and Hyperlink:</b> &lt;a href="url"&gt;text&lt;/a&gt;. Common attributes: href (destination), target (_blank, _self, _parent, _top).</li>
+  </ul>
+
+  <!-- 6.4.15 -->
+  <b>6.4.15 Tables: Creating Tables using TR, TH and TD Tags</b>
+  <p>Tables are used to display data in rows and columns.</p>
+  <ul>
+    <li><b>&lt;table&gt;:</b> Defines the table.</li>
+    <li><b>&lt;tr&gt;:</b> Defines a table row.</li>
+    <li><b>&lt;th&gt;:</b> Defines a table header cell (bold and centered).</li>
+    <li><b>&lt;td&gt;:</b> Defines a standard table data cell.</li>
+    <li>Attributes: border, cellpadding, cellspacing, width, align, valign, colspan, rowspan.</li>
+  </ul>
+
+  <!-- 6.4.16 -->
+  <b>6.4.16 Forms: Creating form using Textbox, radio, checkbox, text area, Button</b>
+  <p>Forms are used to collect user input. The &lt;form&gt; tag defines a form. Common input types:</p>
+  <ul>
+    <li><b>Textbox:</b> &lt;input type="text" name="name"&gt;</li>
+    <li><b>Radio Button:</b> &lt;input type="radio" name="gender" value="male"&gt;</li>
+    <li><b>Checkbox:</b> &lt;input type="checkbox" name="hobby" value="reading"&gt;</li>
+    <li><b>Text Area:</b> &lt;textarea rows="4" cols="50"&gt;&lt;/textarea&gt;</li>
+    <li><b>Button:</b> &lt;input type="button" value="Click Me"&gt; or &lt;button&gt;Click Me&lt;/button&gt;</li>
+    <li><b>Submit Button:</b> &lt;input type="submit" value="Submit"&gt;</li>
+  </ul>
+
+  <!-- 6.4.17 -->
+  <b>6.4.17 Introduction to HTML 5 Elements including audio, embed, source, track and video attributes</b>
+  <p>HTML5 introduced new multimedia elements that allow embedding audio and video directly without plugins.</p>
+  <ul>
+    <li><b>&lt;audio&gt;:</b> Embeds audio files. Example: &lt;audio controls&gt;&lt;source src="audio.mp3" type="audio/mp3"&gt;&lt;/audio&gt;.</li>
+    <li><b>&lt;video&gt;:</b> Embeds video files. Example: &lt;video controls&gt;&lt;source src="video.mp4" type="video/mp4"&gt;&lt;/video&gt;.</li>
+    <li><b>&lt;embed&gt;:</b> Embeds external content (like PDF, SWF). Example: &lt;embed src="file.pdf" type="application/pdf"&gt;.</li>
+    <li><b>&lt;source&gt;:</b> Specifies multiple media sources for &lt;audio&gt; or &lt;video&gt;.</li>
+    <li><b>&lt;track&gt;:</b> Adds captions/subtitles for &lt;video&gt;.</li>
+  </ul>
+
+  <!-- 6.4.18 -->
+  <b>6.4.18 HTML 5 Graphics using canvas and svg tags</b>
+  <ul>
+    <li><b>&lt;canvas&gt;:</b> A container for drawing graphics using JavaScript. Used for 2D shapes, animations, and games.</li>
+    <li><b>&lt;svg&gt;:</b> Scalable Vector Graphics - used for drawing vector-based graphics. SVG elements are defined using XML. Examples: &lt;circle&gt;, &lt;rect&gt;, &lt;line&gt;.</li>
+  </ul>
+
+  <!-- 6.4.19 -->
+  <b>6.4.19 Concept of domain name and web hosting</b>
+  <ul>
+    <li><b>Domain Name:</b> A human-readable address for a website (e.g., google.com). It is translated to an IP address by DNS. Domain names have extensions like .com, .org, .net, .np (country-specific).</li>
+    <li><b>Web Hosting:</b> A service that provides storage space and resources for websites to be accessible on the internet. The domain name points to the hosting server.</li>
+  </ul>
+
+  <hr />
+
+  <!-- =================== 6.5 CSS =================== -->
+  <b>6.5 Cascading Style Sheets</b>
+
+  <!-- 6.5.1 -->
+  <b>6.5.1 Introduction to Cascading Style Sheet (CSS)</b>
+  <p>CSS (Cascading Style Sheets) is a stylesheet language used to control the visual presentation of HTML documents. It allows developers to separate content (HTML) from presentation (styling). CSS controls layout, colors, fonts, spacing, and responsive design.</p>
+
+  <!-- 6.5.2 -->
+  <b>6.5.2 Inline CSS</b>
+  <p>Inline CSS is applied directly to an HTML element using the style attribute. It affects only that specific element. Example: &lt;p style="color: red; font-size: 20px;"&gt;This is red text.&lt;/p&gt;. Inline CSS has the highest priority.</p>
+
+  <!-- 6.5.3 -->
+  <b>6.5.3 Embedded CSS (Internal CSS)</b>
+  <p>Embedded CSS is defined within the &lt;head&gt; section of an HTML document using the &lt;style&gt; tag. It applies to the entire page. Example:</p>
+  <pre>
+    &lt;style&gt;
+      p { color: blue; font-size: 16px; }
+    &lt;/style&gt;
+  </pre>
+
+  <!-- 6.5.4 -->
+  <b>6.5.4 External CSS</b>
+  <p>External CSS is defined in a separate .css file and linked to the HTML document using the &lt;link&gt; tag. This allows the same styles to be applied to multiple pages. Example: &lt;link rel="stylesheet" href="styles.css"&gt;. External CSS is the preferred method for large websites.</p>
+
+</body>
+</html>
