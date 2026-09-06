@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Chapter 5 – Programming Concepts &amp; Logics</title>
+</head>
+<body>
+
+  <h1>Chapter 5: Programming Concepts &amp; Logics (8 hours)</h1>
+
+  <!-- =================== 5.1 =================== -->
+  <b>5.1 Programming Concept</b>
+  <p>Programming is the process of creating a set of instructions that tell a computer how to perform a task. It involves writing code in a programming language that the computer can understand and execute.</p>
+
+  <!-- 5.1.1 -->
+  <b>5.1.1 Introduction to programming languages</b>
+  <p>A programming language is a formal language consisting of a set of instructions that produce various kinds of output. It is used to communicate with computers and create software applications. Programming languages have their own syntax (rules) and semantics (meaning). Examples include C, C++, Java, Python, and JavaScript.</p>
+
+  <!-- 5.1.2 -->
+  <b>5.1.2 Low level, High level, 4 GL programming languages</b>
+  <ul>
+    <li><b>Low-Level Languages:</b> These are close to machine language and are hardware-dependent. They are difficult for humans to read and write but execute very fast.
+      <ul>
+        <li><b>Machine Language:</b> The lowest level, consisting of binary code (0s and 1s) directly understood by the CPU.</li>
+        <li><b>Assembly Language:</b> Uses mnemonics (like ADD, MOV) to represent machine instructions. Requires an assembler to convert to machine code.</li>
+      </ul>
+    </li>
+    <li><b>High-Level Languages:</b> These are closer to human languages and are easier to read, write, and maintain. They are machine-independent and require compilers or interpreters to translate into machine code. Examples: C, C++, Java, Python, JavaScript.</li>
+    <li><b>Fourth-Generation Languages (4GL):</b> These are even more user-friendly and closer to natural language. They are designed for specific applications like database querying and report generation. Examples: SQL, MATLAB, SAS.</li>
+  </ul>
+
+  <!-- 5.1.3 -->
+  <b>5.1.3 Compiler, Interpreter and Assembler</b>
+  <ul>
+    <li><b>Compiler:</b> A program that translates the entire source code of a high-level language into machine code (object code) in one go. It generates an executable file that can be run independently. Examples: GCC for C, javac for Java. It checks for syntax errors before execution.</li>
+    <li><b>Interpreter:</b> A program that translates and executes high-level code line by line. It does not produce a separate executable file; it translates and executes simultaneously. If an error occurs, execution stops at that line. Examples: Python interpreter, JavaScript interpreter.</li>
+    <li><b>Assembler:</b> A program that translates assembly language code into machine language. It converts mnemonics into binary instructions that the CPU can execute directly.</li>
+  </ul>
+
+  <!-- 5.1.4 -->
+  <b>5.1.4 Syntax, Semantic and Runtime errors</b>
+  <ul>
+    <li><b>Syntax Errors:</b> Errors that occur when the code violates the grammatical rules of the programming language. These are caught by the compiler or interpreter. Example: missing semicolon, incorrect spelling of a keyword.</li>
+    <li><b>Semantic Errors:</b> Errors that occur when the code is syntactically correct but does not make logical sense or produces unintended results. Example: using the wrong operator (addition instead of subtraction).</li>
+    <li><b>Runtime Errors:</b> Errors that occur during program execution. These cause the program to crash or behave unexpectedly. Example: division by zero, accessing an array out of bounds, file not found.</li>
+  </ul>
+
+  <!-- 5.1.5 -->
+  <b>5.1.5 Control structures: Sequence, Selection and Iteration</b>
+  <p>Control structures determine the flow of execution in a program. There are three fundamental types:</p>
+  <ul>
+    <li><b>Sequence:</b> Statements are executed in order, one after another, from top to bottom. This is the default flow of a program.</li>
+    <li><b>Selection (Decision Making):</b> The program chooses which block of code to execute based on a condition. This includes if, if-else, if-else-if, and switch statements.</li>
+    <li><b>Iteration (Looping):</b> A block of code is executed repeatedly as long as a condition remains true. This includes for, while, and do-while loops.</li>
+  </ul>
+
+  <!-- 5.1.6 -->
+  <b>5.1.6 Program Design tools - Algorithm, Flowchart and Pseudocode</b>
+  <p>Before writing actual code, programmers use design tools to plan the logic of the program.</p>
+  <ul>
+    <li><b>Algorithm:</b> A step-by-step procedure or set of rules to solve a problem or accomplish a task. It is written in plain English or a structured format. Example: An algorithm to add two numbers: Step 1: Start, Step 2: Read A and B, Step 3: Calculate sum = A + B, Step 4: Display sum, Step 5: End.</li>
+    <li><b>Flowchart:</b> A graphical representation of an algorithm using symbols like ovals (start/end), parallelograms (input/output), rectangles (processing), diamonds (decision), and arrows (flow direction).</li>
+    <li><b>Pseudocode:</b> A simplified, human-readable version of code that uses plain language and programming-like constructs. It is not actual code but helps in planning the logic. Example: BEGIN, READ A, CALCULATE SUM = A + B, PRINT SUM, END.</li>
+  </ul>
+
+  <!-- 5.1.7 -->
+  <b>5.1.7 Absolute binary, BCD, ASCII and Unicode</b>
+  <ul>
+    <li><b>Absolute Binary:</b> The direct binary representation of a number as stored in memory, often used in machine-level programming.</li>
+    <li><b>BCD (Binary Coded Decimal):</b> A method of encoding decimal numbers where each decimal digit is represented by a 4-bit binary number. Example: 12 is represented as 0001 0010. Used in applications where decimal accuracy is important (financial systems).</li>
+    <li><b>ASCII (American Standard Code for Information Interchange):</b> A character encoding standard that uses 7-bit or 8-bit codes to represent characters (letters, digits, symbols). Example: 'A' = 65, 'a' = 97, '0' = 48.</li>
+    <li><b>Unicode:</b> A universal character encoding standard that supports almost all writing systems in the world. It uses up to 32 bits per character and can represent over 140,000 characters. Examples: UTF-8, UTF-16, UTF-32.</li>
+  </ul>
+
+  <hr />
+
+  <!-- =================== 5.2 =================== -->
+  <b>5.2 C Programming Language</b>
+  <p>C is a general-purpose, high-level programming language developed by Dennis Ritchie at Bell Labs in 1972. It is widely used for system programming, embedded systems, and application development. C is known for its efficiency, flexibility, and control over system resources.</p>
+
+  <!-- 5.2.1 -->
+  <b>5.2.1 Introduction and Features of C Language</b>
+  <p>C is a structured, procedural programming language. Its key features include:</p>
+  <ul>
+    <li><b>Simplicity and Efficiency:</b> C has a small set of keywords and is highly efficient in execution.</li>
+    <li><b>Portability:</b> C programs can run on different platforms with minimal changes.</li>
+    <li><b>Rich Library:</b> C provides a large set of built-in functions (header files).</li>
+    <li><b>Low-level Access:</b> C allows direct memory manipulation using pointers.</li>
+    <li><b>Structured Language:</b> C supports functions and control structures for modular programming.</li>
+    <li><b>Recursion:</b> C supports recursive function calls.</li>
+  </ul>
+
+  <!-- 5.2.2 -->
+  <b>5.2.2 Structure of C program</b>
+  <p>A typical C program has the following structure:</p>
+  <pre>
+    #include &lt;stdio.h&gt;   // Preprocessor directive
+    #include &lt;conio.h&gt;   // For getch() etc.
+
+    void main() {        // Main function - program execution starts here
+        // Variable declarations
+        // Statements
+        // Input/Output operations
+        getch();        // To hold the screen (optional)
+    }
+  </pre>
+
+  <!-- 5.2.3 -->
+  <b>5.2.3 C Preprocessor and Header Files</b>
+  <p><b>Preprocessor:</b> It is a program that processes the source code before it is compiled. Preprocessor directives start with a # symbol. Examples: #include, #define, #ifdef.</p>
+  <p><b>Header Files:</b> These are files with a .h extension that contain function declarations, macros, and type definitions. They are included in the program using the #include directive. Common header files:</p>
+  <ul>
+    <li><b>stdio.h:</b> Standard Input/Output (printf, scanf, getchar, putchar).</li>
+    <li><b>conio.h:</b> Console Input/Output (getch, clrscr - not standard).</li>
+    <li><b>string.h:</b> String handling functions (strlen, strcpy, strcat).</li>
+    <li><b>math.h:</b> Mathematical functions (sqrt, pow, sin, cos).</li>
+    <li><b>stdlib.h:</b> Standard library functions (malloc, free, atoi).</li>
+  </ul>
+
+  <!-- 5.2.4 -->
+  <b>5.2.4 Character Set used in C</b>
+  <p>C uses the ASCII character set (or extended ASCII) to represent characters. It includes:</p>
+  <ul>
+    <li><b>Alphabets:</b> A-Z (uppercase), a-z (lowercase)</li>
+    <li><b>Digits:</b> 0-9</li>
+    <li><b>Special Symbols:</b> @, #, $, %, ^, &, *, (, ), {, }, [, ], &lt;, &gt;, etc.</li>
+    <li><b>White Spaces:</b> Space, tab, newline, carriage return.</li>
+  </ul>
+
+  <!-- 5.2.5 -->
+  <b>5.2.5 Use of Comments</b>
+  <p>Comments are used to explain the code and make it readable. They are ignored by the compiler. In C, there are two types:</p>
+  <ul>
+    <li><b>Single-line comment:</b> Starts with //. Example: // This is a comment.</li>
+    <li><b>Multi-line comment:</b> Enclosed between /* and */. Example: /* This is a multi-line comment */</li>
+  </ul>
+
+  <!-- 5.2.6 -->
+  <b>5.2.6 Identifiers, Keywords and Tokens</b>
+  <ul>
+    <li><b>Identifiers:</b> Names given to variables, functions, arrays, and other user-defined items. They must start with a letter or underscore and can contain letters, digits, and underscores. Example: age, _sum, total1.</li>
+    <li><b>Keywords:</b> Reserved words in C that have a predefined meaning. They cannot be used as identifiers. Examples: int, float, char, if, else, for, while, return, void, main.</li>
+    <li><b>Tokens:</b> The smallest individual units in a C program. Tokens include keywords, identifiers, constants, strings, operators, and separators (like semicolon, braces).</li>
+  </ul>
+
+  <!-- 5.2.7 -->
+  <b>5.2.7 Basic Data Types in C</b>
+  <p>C has several basic data types that define the type of data a variable can store:</p>
+  <ul>
+    <li><b>int:</b> Stores integer values (whole numbers). Size: 2 or 4 bytes.</li>
+    <li><b>char:</b> Stores a single character. Size: 1 byte.</li>
+    <li><b>float:</b> Stores floating-point numbers (real numbers with decimal). Size: 4 bytes.</li>
+    <li><b>double:</b> Stores double-precision floating-point numbers. Size: 8 bytes.</li>
+    <li><b>void:</b> Represents no value. Used for functions that do not return anything.</li>
+  </ul>
+
+  <!-- 5.2.8 -->
+  <b>5.2.8 Constants and Variables</b>
+  <ul>
+    <li><b>Variable:</b> A named memory location that can store data which can change during program execution. Declaration: <code>int age;</code></li>
+    <li><b>Constant:</b> A value that cannot be changed during program execution. Defined using <code>#define</code> or the <code>const</code> keyword. Examples: <code>#define PI 3.14159</code> or <code>const int MAX = 100;</code></li>
+  </ul>
+
+  <!-- 5.2.9 -->
+  <b>5.2.9 Type Specifier</b>
+  <p>Type specifiers (also called format specifiers) are used in input/output functions to specify the type of data being read or printed. Common specifiers:</p>
+  <ul>
+    <li><b>%d:</b> Integer (int)</li>
+    <li><b>%f:</b> Float</li>
+    <li><b>%lf:</b> Double</li>
+    <li><b>%c:</b> Character</li>
+    <li><b>%s:</b> String (character array)</li>
+    <li><b>%x:</b> Hexadecimal</li>
+    <li><b>%o:</b> Octal</li>
+  </ul>
+
+  <!-- 5.2.10 -->
+  <b>5.2.10 Simple and Compound Statements</b>
+  <ul>
+    <li><b>Simple Statement:</b> A single statement ending with a semicolon. Example: <code>a = 10;</code></li>
+    <li><b>Compound Statement:</b> A group of statements enclosed within curly braces { }. It is treated as a single logical unit. Example: <code>{ a = 10; b = 20; c = a + b; }</code></li>
+  </ul>
+
+  <!-- 5.2.11 -->
+  <b>5.2.11 Operators and Expressions: arithmetic, relational, logical, assignment, unary and conditional operators</b>
+  <ul>
+    <li><b>Arithmetic Operators:</b> + (addition), - (subtraction), * (multiplication), / (division), % (modulus).</li>
+    <li><b>Relational Operators:</b> == (equal to), != (not equal), &lt; (less than), &gt; (greater than), &lt;= (less than or equal), &gt;= (greater than or equal).</li>
+    <li><b>Logical Operators:</b> &amp;&amp; (AND), || (OR), ! (NOT). Used for combining conditions.</li>
+    <li><b>Assignment Operator:</b> = (assigns value). Example: <code>x = 10;</code></li>
+    <li><b>Unary Operators:</b> ++ (increment), -- (decrement), - (negative).</li>
+    <li><b>Conditional Operator (Ternary):</b> ? : - A shorthand for if-else. Syntax: <code>condition ? expression1 : expression2;</code></li>
+  </ul>
+
+  <!-- 5.2.12 -->
+  <b>5.2.12 Input/output (I/O) Functions</b>
+  <ul>
+    <li><b>Input Functions:</b> <code>scanf()</code> is used to read formatted input from the keyboard. <code>getch()</code>, <code>getchar()</code>, <code>gets()</code> are also used for input.</li>
+    <li><b>Output Functions:</b> <code>printf()</code> is used to display formatted output. <code>putchar()</code>, <code>puts()</code> are also used.</li>
+  </ul>
+
+  <!-- 5.2.13 -->
+  <b>5.2.13 Selection Control Statement: Decisions (if, if-else, if-else-if, nested and, switch)</b>
+  <ul>
+    <li><b>if:</b> Executes a block of code if a condition is true. Syntax: <code>if(condition) { // statements }</code></li>
+    <li><b>if-else:</b> Executes one block if condition is true, another if false. Syntax: <code>if(condition) { } else { }</code></li>
+    <li><b>if-else-if (Ladder):</b> Used for multiple conditions. Syntax: <code>if(cond1) { } else if(cond2) { } else { }</code></li>
+    <li><b>Nested if:</b> An if statement inside another if statement.</li>
+    <li><b>switch:</b> A selection statement that checks a variable against multiple cases. Syntax: <code>switch(variable) { case value1: // statements; break; default: // statements; }</code></li>
+  </ul>
+
+  <!-- 5.2.14 -->
+  <b>5.2.14 Iteration Control Statement: Looping (while, do while, for nested)</b>
+  <ul>
+    <li><b>while:</b> Executes a block of code while a condition is true. Condition is checked before execution. Syntax: <code>while(condition) { // statements }</code></li>
+    <li><b>do-while:</b> Executes the block first, then checks the condition. Guarantees at least one execution. Syntax: <code>do { // statements } while(condition);</code></li>
+    <li><b>for:</b> A compact loop with initialization, condition, and increment/decrement in one line. Syntax: <code>for(init; condition; increment) { // statements }</code></li>
+    <li><b>Nested Loop:</b> A loop inside another loop.</li>
+  </ul>
+
+  <!-- 5.2.15 -->
+  <b>5.2.15 Array: definition, types(1D and 2D), matrix addition and subtraction</b>
+  <p>An array is a collection of similar data types stored in contiguous memory locations and accessed using an index.</p>
+  <ul>
+    <li><b>1D Array:</b> A linear array with one row. Declaration: <code>int arr[5];</code></li>
+    <li><b>2D Array:</b> A matrix with rows and columns. Declaration: <code>int matrix[3][3];</code></li>
+  </ul>
+  <p><b>Matrix Addition:</b> Two matrices can be added if they have the same dimensions. Corresponding elements are added. <b>Matrix Subtraction:</b> Similar to addition, corresponding elements are subtracted.</p>
+
+  <!-- 5.2.16 -->
+  <b>5.2.16 String: definition and string function : strlen(), strcat(), strcmp(), strrev(), strcpy(), strlwr(), strupr()</b>
+  <p>A string is a sequence of characters stored in a character array and terminated by a null character '\0'. Strings are manipulated using functions from the string.h header file.</p>
+  <ul>
+    <li><b>strlen(str):</b> Returns the length of the string (excluding the null character).</li>
+    <li><b>strcat(str1, str2):</b> Appends str2 to the end of str1.</li>
+    <li><b>strcmp(str1, str2):</b> Compares two strings. Returns 0 if equal, positive if str1 > str2, negative if str1 &lt; str2.</li>
+    <li><b>strrev(str):</b> Reverses the string.</li>
+    <li><b>strcpy(dest, src):</b> Copies src string to dest.</li>
+    <li><b>strlwr(str):</b> Converts a string to lowercase.</li>
+    <li><b>strupr(str):</b> Converts a string to uppercase.</li>
+  </ul>
+
+</body>
+</html>
