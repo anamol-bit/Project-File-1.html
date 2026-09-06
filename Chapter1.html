@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Chapter 1: Computer System – NEB Grade 11</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Segoe UI', Roboto, system-ui, sans-serif;
+      background: #fafafa;
+      color: #1e1e2a;
+      line-height: 1.7;
+      padding: 2rem 1.5rem;
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+    h1 {
+      font-size: 2.2rem;
+      text-align: center;
+      border-bottom: 3px solid #2c3e50;
+      padding-bottom: 0.5rem;
+      margin-bottom: 2rem;
+      color: #0b1a2b;
+      letter-spacing: -0.5px;
+    }
+    h2 {
+      font-size: 1.7rem;
+      margin-top: 2.5rem;
+      margin-bottom: 1rem;
+      color: #1a3a5c;
+      border-left: 6px solid #1a73e8;
+      padding-left: 0.8rem;
+    }
+    h3 {
+      font-size: 1.25rem;
+      margin-top: 1.8rem;
+      margin-bottom: 0.6rem;
+      color: #1e3b5d;
+      font-weight: 600;
+    }
+    p {
+      margin-bottom: 0.8rem;
+    }
+    ul, ol {
+      margin: 0.5rem 0 1rem 1.8rem;
+    }
+    li {
+      margin-bottom: 0.3rem;
+    }
+    .highlight {
+      background: #eef6ff;
+      border-radius: 6px;
+      padding: 0.1rem 0.4rem;
+      font-weight: 500;
+      color: #0b2b4a;
+    }
+    code {
+      background: #ececec;
+      padding: 0.1rem 0.4rem;
+      border-radius: 4px;
+      font-size: 0.95em;
+    }
+    hr {
+      margin: 2.5rem 0 1rem;
+      border: none;
+      border-top: 2px dashed #d0d7de;
+    }
+    .section-number {
+      font-weight: 600;
+      color: #1a5a8a;
+    }
+    .toc {
+      background: #f0f4f9;
+      padding: 1.2rem 2rem;
+      border-radius: 10px;
+      margin-bottom: 2.5rem;
+    }
+    .toc h2 {
+      border-left: none;
+      margin-top: 0;
+      padding-left: 0;
+      font-size: 1.5rem;
+    }
+    .toc ul {
+      list-style: none;
+      margin-left: 0;
+      columns: 2;
+      column-gap: 2rem;
+    }
+    .toc ul li {
+      margin-bottom: 0.4rem;
+    }
+    .toc ul li a {
+      text-decoration: none;
+      color: #1a3a5c;
+    }
+    .toc ul li a:hover {
+      text-decoration: underline;
+      color: #0b2a4a;
+    }
+    @media (max-width: 640px) {
+      .toc ul {
+        columns: 1;
+      }
+      body {
+        padding: 1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <h1>📘 Chapter 1: Computer System</h1>
+
+  <!-- Table of Contents (optional but helpful) -->
+  <div class="toc">
+    <h2>📑 Contents</h2>
+    <ul>
+      <li><a href="#sec1">1.1 Introduction of computer</a></li>
+      <li><a href="#sec1-1">1.1.1 Definition, characteristics and application</a></li>
+      <li><a href="#sec1-2">1.1.2 Evolution of computer technology</a></li>
+      <li><a href="#sec1-3">1.1.3 Measurement unit of processing speed and storage</a></li>
+      <li><a href="#sec1-4">1.1.4 Super, Mainframe, Mini and Microcomputers</a></li>
+      <li><a href="#sec1-5">1.1.5 Mobile Computing and its Application</a></li>
+      <li><a href="#sec2">1.2 Computer system and I/O devices</a></li>
+      <li><a href="#sec2-1">1.2.1 Concept of computer architecture and organization</a></li>
+      <li><a href="#sec2-2">1.2.2 Components of computer system</a></li>
+      <li><a href="#sec2-3">1.2.3 Microprocessor</a></li>
+      <li><a href="#sec2-4">1.2.4 Bus System</a></li>
+      <li><a href="#sec2-5">1.2.5 Primary memory</a></li>
+      <li><a href="#sec2-6">1.2.6 Secondary Memory</a></li>
+      <li><a href="#sec2-7">1.2.7 Input Devices</a></li>
+      <li><a href="#sec2-8">1.2.8 Output Devices</a></li>
+      <li><a href="#sec2-9">1.2.9 Hardware Interfaces</a></li>
+    </ul>
+  </div>
+
+  <!-- ===================== SECTION 1.1 ===================== -->
+  <h2 id="sec1">1.1 Introduction to Computer</h2>
+
+  <p>The modern world is fundamentally shaped by computers, devices so integral to our daily lives that we often take them for granted. From the smartphone in our pocket to the massive servers that power the internet, computers have revolutionized how we work, communicate, learn, and entertain ourselves. To understand the digital age, one must first understand the computer itself. This chapter explores the core concepts of a computer system, from its basic definition and historical evolution to its complex internal architecture and the vast array of devices that allow us to interact with it.</p>
+
+  <!-- 1.1.1 -->
+  <h3 id="sec1-1">1.1.1 Definition, Characteristics, and Applications of Computer</h3>
+
+  <p>At its most fundamental level, a <strong>computer</strong> is an electronic device that processes data, converting it into meaningful information. It is a machine that operates under the control of a set of instructions (a program) to accept input, process it according to predefined rules, produce output, and store the results for future use.</p>
+
+  <p>To be classified as a computer, a device must possess several key <strong>characteristics</strong>:</p>
+  <ul>
+    <li><strong>Speed:</strong> Computers can process vast amounts of data at incredible speeds, measured in fractions of a second (nanoseconds and picoseconds).</li>
+    <li><strong>Accuracy:</strong> The accuracy of a computer is consistently high. Errors are almost always due to human error (incorrect data or programming) rather than a fault of the machine itself.</li>
+    <li><strong>Diligence:</strong> Unlike humans, computers do not suffer from fatigue, boredom, or lack of concentration. They can perform repetitive tasks tirelessly for long periods.</li>
+    <li><strong>Versatility:</strong> Computers are incredibly versatile. They can perform a wide variety of tasks, from complex scientific calculations to playing music, managing databases, and creating art.</li>
+    <li><strong>Storage:</strong> They have the ability to store vast amounts of data and information, which can be retrieved almost instantly.</li>
+    <li><strong>Automation:</strong> Once a program is loaded, a computer can execute a series of instructions automatically without human intervention.</li>
+  </ul>
+
+  <p>Because of these powerful characteristics, computers have found <strong>applications</strong> in virtually every field:</p>
+  <ul>
+    <li><strong>Business:</strong> For inventory management, payroll, accounting, and data analytics.</li>
+    <li><strong>Education:</strong> For e‑learning, virtual classrooms, research, and administrative tasks.</li>
+    <li><strong>Healthcare:</strong> In diagnostic tools (like MRI and CT scans), patient monitoring, and managing hospital records.</li>
+    <li><strong>Science &amp; Engineering:</strong> For complex simulations, weather forecasting, and designing structures.</li>
+    <li><strong>Government:</strong> For managing citizen data, defense systems, and public services.</li>
+    <li><strong>Entertainment:</strong> In video games, movie special effects, and streaming media.</li>
+  </ul>
+
+  <!-- 1.1.2 -->
+  <h3 id="sec1-2">1.1.2 Evolution of Computer Technology</h3>
+
+  <p>The modern computer is the culmination of thousands of years of human innovation in calculation. The journey began with simple tools like the <strong>abacus</strong>, which was used as early as 3000 BC. The <strong>Napier's Bones</strong> (1617) and the <strong>slide rule</strong> (1632) allowed for more complex multiplication and division. The first real mechanical calculating machine was designed by Blaise Pascal in 1642, and Gottfried Leibniz improved upon it. However, the real turning point came with the analytical engine designed by Charles Babbage in the 19th century, which incorporated the core concepts of a modern computer: an input, memory, a processing unit (the "mill"), and an output. He is considered the "father of the computer."</p>
+
+  <p>The evolution of modern computers is often categorized into distinct generations based on the technology used:</p>
+  <ul>
+    <li><strong>First Generation (1940s–1956):</strong> These computers used <strong>Vacuum Tubes</strong> as their main electronic component. They were enormous, generated tremendous heat, and were very unreliable. Examples include the ENIAC and UNIVAC I.</li>
+    <li><strong>Second Generation (1956–1963):</strong> The invention of the <strong>Transistor</strong> revolutionized computing. Transistors were smaller, faster, more reliable, and consumed less power than vacuum tubes. They marked the beginning of a shift towards smaller computers like the IBM 1401.</li>
+    <li><strong>Third Generation (1964–1971):</strong> The development of the <strong>Integrated Circuit (IC)</strong>, which placed multiple transistors on a single silicon chip, was the key to this generation. This led to a further decrease in size, cost, and an increase in speed and reliability. This is when the <strong>keyboard</strong> and <strong>monitor</strong> were introduced as primary input/output devices.</li>
+    <li><strong>Fourth Generation (1971–1980):</strong> This generation is defined by the <strong>Microprocessor</strong>, which placed all the core processing components of a computer onto a single chip. This made it possible to create the first personal computers (PCs), like the Altair 8800 and the Apple II.</li>
+    <li><strong>Fifth Generation (1980–Present):</strong> This is the era of <strong>Artificial Intelligence (AI)</strong> and supercomputers, based on <strong>Very Large-Scale Integration (VLSI)</strong> technology. The focus is on parallel processing, making computers more intelligent, and developing user-friendly interfaces like voice and touch recognition. Examples include modern laptops, smartphones, and AI‑powered systems.</li>
+  </ul>
+
+  <!-- 1.1.3 -->
+  <h3 id="sec1-3">1.1.3 Measurement Units of Processing Speed and Storage Unit</h3>
+
+  <p>Computers process and store data in binary form (0s and 1s), known as <strong>bits</strong>. A group of 8 bits is called a <strong>Byte</strong>, which is the standard unit for measuring memory and storage.</p>
+
+  <p>For <strong>storage</strong>, the units increase in multiples of 1024 (2<sup>10</sup>):</p>
+  <ul>
+    <li><strong>1 Bit:</strong> A single binary digit (0 or 1).</li>
+    <li><strong>1 Byte (B):</strong> 8 bits.</li>
+    <li><strong>1 Kilobyte (KB):</strong> 1024 Bytes.</li>
+    <li><strong>1 Megabyte (MB):</strong> 1024 Kilobytes.</li>
+    <li><strong>1 Gigabyte (GB):</strong> 1024 Megabytes.</li>
+    <li><strong>1 Terabyte (TB):</strong> 1024 Gigabytes.</li>
+    <li><strong>1 Petabyte (PB):</strong> 1024 Terabytes.</li>
+  </ul>
+
+  <p>For <strong>processing speed</strong>, the unit is Hertz (Hz), representing one cycle per second. The speed of a CPU (its clock speed) is measured in:</p>
+  <ul>
+    <li><strong>Megahertz (MHz):</strong> Millions of cycles per second.</li>
+    <li><strong>Gigahertz (GHz):</strong> Billions of cycles per second. Modern processors operate at speeds of several GHz.</li>
+  </ul>
+
+  <!-- 1.1.4 -->
+  <h3 id="sec1-4">1.1.4 Super, Mainframe, Mini and Microcomputers</h3>
+
+  <p>Computers are also classified by their size, power, and purpose:</p>
+  <ul>
+    <li><strong>Supercomputers:</strong> The most powerful computers in existence. They are used for complex scientific and engineering applications that require massive amounts of processing, such as weather forecasting, quantum mechanics, and nuclear simulations. They are extremely expensive and are used by large organizations and governments.</li>
+    <li><strong>Mainframe Computers:</strong> These are large, powerful computers used by large corporations and government agencies to process and manage billions of transactions. They are characterized by their high reliability, security, and ability to support thousands of users simultaneously. Examples include banks, airline reservation systems, and census data processing.</li>
+    <li><strong>Mini Computers (Midrange Servers):</strong> More powerful than a personal computer but less powerful than a mainframe. They were popular in the 1960s–1980s for departmental and business‑specific tasks. Their role has largely been superseded by powerful servers in modern times.</li>
+    <li><strong>Microcomputers:</strong> This is the category most people are familiar with. They are based on a microprocessor and are designed for individual use.
+      <ul>
+        <li><strong>Desktop Computers:</strong> Used in a fixed location.</li>
+        <li><strong>Laptops/Notebooks:</strong> Portable, all‑in‑one devices.</li>
+        <li><strong>Tablets/Smartphones:</strong> Highly portable, touchscreen‑based devices.</li>
+      </ul>
+    </li>
+  </ul>
+
+  <!-- 1.1.5 -->
+  <h3 id="sec1-5">1.1.5 Mobile Computing and Its Application</h3>
+
+  <p><strong>Mobile computing</strong> is the use of portable computing devices (like smartphones, tablets, and laptops) in conjunction with wireless networks. It allows users to access data and information, communicate, and perform tasks from anywhere and at any time. Its key characteristics are portability, wireless connectivity, and location‑awareness.</p>
+
+  <p><strong>Applications of mobile computing</strong> are vast and include:</p>
+  <ul>
+    <li><strong>Communication:</strong> Email, instant messaging, video calls.</li>
+    <li><strong>E‑Commerce:</strong> Online shopping, mobile banking, digital wallets.</li>
+    <li><strong>Navigation:</strong> GPS‑based mapping and real‑time traffic updates.</li>
+    <li><strong>Social Networking:</strong> Access to platforms like Facebook, Instagram, and Twitter.</li>
+    <li><strong>Education:</strong> E‑learning apps and digital textbooks.</li>
+    <li><strong>Healthcare:</strong> Remote patient monitoring, health tracking apps.</li>
+  </ul>
+
+  <hr />
+
+  <!-- ===================== SECTION 1.2 ===================== -->
+  <h2 id="sec2">1.2 Computer System and I/O Devices</h2>
+
+  <p>A computer system is more than just the Central Processing Unit (CPU). It's a complete, integrated network of hardware and software components that work together to process data.</p>
+
+  <!-- 1.2.1 -->
+  <h3 id="sec2-1">1.2.1 Concept of Computer Architecture and Organization</h3>
+
+  <p>The terms "architecture" and "organization" are often used interchangeably but have distinct meanings in computer science. <strong>Computer Architecture</strong> refers to the conceptual design and fundamental operational structure of a computer system. It deals with the high‑level, abstract view of the system, such as the instruction set, memory addressing, and the CPU's design from the programmer's perspective. <strong>Computer Organization</strong>, on the other hand, deals with the way hardware components are connected and how they operate to implement the architectural specifications. It's about the physical and logical implementation of the system, like how the memory is physically built and how data flows between components. In simpler terms, architecture is <em>what</em> the computer does, and organization is <em>how</em> it does it.</p>
+
+  <!-- 1.2.2 -->
+  <h3 id="sec2-2">1.2.2 Components of a Computer System</h3>
+
+  <p>A basic computer system consists of five primary functional units:</p>
+  <ol>
+    <li><strong>Input Unit:</strong> This is how data and instructions enter the system. Input devices convert user commands and data into a format that the computer can understand.</li>
+    <li><strong>Memory Unit:</strong> This is where data and instructions are stored.
+      <ul>
+        <li><strong>Primary Memory (Main Memory):</strong> Fast, directly accessible by the CPU (e.g., RAM, ROM).</li>
+        <li><strong>Secondary Memory (Auxiliary Memory):</strong> Slower, non‑volatile storage for long‑term data (e.g., Hard Disk, SSD).</li>
+      </ul>
+    </li>
+    <li><strong>Processing Unit (CPU – Central Processing Unit):</strong> The "brain" of the computer. It performs all the calculations and data manipulation.</li>
+    <li><strong>Output Unit:</strong> This is how processed data is presented to the user. Output devices convert the computer's results into a human‑understandable form.</li>
+    <li><strong>Storage Unit:</strong> Often considered part of the memory unit, but more specifically refers to long‑term, non‑volatile storage (Secondary Memory) where data is saved permanently.</li>
+  </ol>
+
+  <!-- 1.2.3 -->
+  <h3 id="sec2-3">1.2.3 Microprocessor: Basic Concepts</h3>
+
+  <p>The <strong>microprocessor</strong> is the Central Processing Unit (CPU) contained on a single Integrated Circuit (IC) chip. It is the heart of all microcomputers. Key concepts include:</p>
+  <ul>
+    <li><strong>Clock Speed:</strong> Measured in MHz or GHz, it determines how many instructions the processor can execute per second.</li>
+    <li><strong>Word Length:</strong> The number of bits the processor can process at one time. A 32‑bit processor can handle 32 bits of data in one operation, while a 64‑bit processor can handle 64 bits, making it faster and more efficient.</li>
+    <li><strong>Components:</strong> A microprocessor consists of:
+      <ul>
+        <li><strong>Arithmetic Logic Unit (ALU):</strong> Performs all arithmetic (addition, subtraction) and logical (AND, OR, NOT) operations.</li>
+        <li><strong>Control Unit (CU):</strong> Directs the flow of data and instructions within the CPU and between other components. It decodes instructions and tells the ALU what to do.</li>
+        <li><strong>Registers:</strong> Small, high‑speed storage locations within the CPU used to hold immediate data and instructions that are being processed.</li>
+      </ul>
+    </li>
+    <li><strong>Functions:</strong> The primary function of the microprocessor is to fetch instructions from memory, decode them, execute them using the ALU and registers, and store the results back in memory.</li>
+  </ul>
+
+  <!-- 1.2.4 -->
+  <h3 id="sec2-4">1.2.4 Bus System</h3>
+
+  <p>For the components of a computer to communicate, they need a communication pathway, which is provided by the <strong>bus system</strong>. A bus is a set of parallel wires that transmits data, addresses, and control signals. There are three main types of buses:</p>
+  <ul>
+    <li><strong>Data Bus:</strong> A bidirectional pathway that carries actual data between the CPU, memory, and I/O devices. The width of the data bus (number of wires) determines how much data can be transferred at once.</li>
+    <li><strong>Address Bus:</strong> A unidirectional pathway that carries memory addresses from the CPU to other components. It specifies <em>where</em> the data is to be read from or written to.</li>
+    <li><strong>Control Bus:</strong> A bidirectional pathway that carries control signals and commands from the CPU. It sends signals like "read," "write," and "interrupt" to manage and coordinate the entire system.</li>
+  </ul>
+
+  <!-- 1.2.5 -->
+  <h3 id="sec2-5">1.2.5 Primary Memory</h3>
+
+  <p><strong>Primary memory</strong> is the internal, directly accessible memory of the computer. It is volatile, meaning its contents are lost when the power is turned off.</p>
+
+  <ul>
+    <li><strong>RAM (Random Access Memory):</strong> This is the main memory where data and programs are stored while the computer is in use. It is a read‑write memory.
+      <ul>
+        <li><strong>Types of RAM:</strong>
+          <ul>
+            <li><strong>SRAM (Static RAM):</strong> Fast, uses flip‑flops, expensive, used for Cache memory.</li>
+            <li><strong>DRAM (Dynamic RAM):</strong> Slower, uses capacitors, less expensive, used as main system memory (RAM).</li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+    <li><strong>ROM (Read‑Only Memory):</strong> This is non‑volatile, meaning it retains its data even when the power is off. It holds the firmware, which is the permanent, basic startup instructions (like the BIOS).
+      <ul>
+        <li><strong>Types of ROM:</strong>
+          <ul>
+            <li><strong>MROM (Masked ROM):</strong> Programmed by the manufacturer and cannot be changed.</li>
+            <li><strong>PROM (Programmable ROM):</strong> Can be programmed once by the user.</li>
+            <li><strong>EPROM (Erasable PROM):</strong> Can be erased using ultraviolet light and reprogrammed.</li>
+            <li><strong>EEPROM (Electrically Erasable PROM):</strong> Can be erased and reprogrammed electronically.</li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+    <li><strong>Cache Memory:</strong> A very small, very fast type of SRAM. It stores frequently accessed data and instructions to speed up the CPU's processing time. It acts as a buffer between the CPU and the slower main RAM.</li>
+    <li><strong>Buffer:</strong> A temporary storage area used to store data while it is being moved from one place to another. For instance, a buffer might be used to hold data received from a network before it's processed by the CPU, helping to smooth out performance differences.</li>
+  </ul>
+
+  <!-- 1.2.6 -->
+  <h3 id="sec2-6">1.2.6 Secondary Memory</h3>
+
+  <p><strong>Secondary memory</strong> is non‑volatile storage used for permanent storage of data and programs. It is not directly accessible by the CPU; data must be loaded into primary memory first. Types include:</p>
+  <ul>
+    <li><strong>Magnetic Disk:</strong> Hard Disk Drives (HDDs) store data on magnetically coated platters.</li>
+    <li><strong>Flash Memory:</strong> A type of non‑volatile storage that can be electrically erased and reprogrammed. It is used in Solid State Drives (SSDs) and USB drives (pen drives).</li>
+    <li><strong>Optical Disk:</strong> Data is read and written using a laser. Examples include CDs, DVDs, and Blu‑ray discs.</li>
+    <li><strong>External Storage Device / Memory Stick (Pen Drive):</strong> Portable flash memory devices that connect via a USB port for easy data transfer.</li>
+  </ul>
+
+  <!-- 1.2.7 -->
+  <h3 id="sec2-7">1.2.7 Input Devices</h3>
+
+  <p>Input devices are hardware used to provide data and control signals to a computer.</p>
+  <ul>
+    <li><strong>Keyboard:</strong> The most common input device, uses a layout of keys for text and command input.</li>
+    <li><strong>Mouse:</strong> A pointing device used for GUI navigation.</li>
+    <li><strong>Scanner:</strong> Converts physical documents or images into digital data. Types include flatbed, sheet‑fed, and handheld scanners.</li>
+    <li><strong>Light Pen:</strong> A light‑sensitive pen used to select or draw directly on the screen.</li>
+    <li><strong>OMR (Optical Mark Recognition):</strong> Reads pencil marks on specialized forms, used for exams and surveys.</li>
+    <li><strong>OCR (Optical Character Recognition):</strong> Converts images of text (like scanned documents) into editable, searchable text.</li>
+    <li><strong>BCR (Bar Code Reader):</strong> Reads barcodes, widely used in retail for product identification.</li>
+    <li><strong>MICR (Magnetic Ink Character Recognition):</strong> Special characters printed in magnetic ink, used on bank cheques for secure processing.</li>
+    <li><strong>Touch Screen:</strong> A display that is also an input device, allowing user input by touching the screen.</li>
+    <li><strong>Microphone:</strong> Converts sound waves into electrical signals for voice input.</li>
+    <li><strong>Digital Camera:</strong> Captures images and videos in a digital format for the computer.</li>
+  </ul>
+
+  <!-- 1.2.8 -->
+  <h3 id="sec2-8">1.2.8 Output Devices</h3>
+
+  <p>Output devices present processed data from the computer to the user.</p>
+  <ul>
+    <li><strong>Monitor (Display):</strong> The primary visual output device.
+      <ul>
+        <li><strong>LCD (Liquid Crystal Display):</strong> Uses liquid crystals to produce images. They are thin, power‑efficient, and common in modern monitors.</li>
+        <li><strong>LED (Light Emitting Diode):</strong> A type of LCD that uses LEDs for backlighting, offering better color, contrast, and energy efficiency.</li>
+      </ul>
+    </li>
+    <li><strong>Printer:</strong> Produces a hard copy (physical printout) of documents.
+      <ul>
+        <li><strong>Dot Matrix Printer:</strong> An impact printer that uses a print head to strike an ink‑soaked ribbon, forming characters from a matrix of dots. Noisy but can create carbon copies.</li>
+        <li><strong>Inkjet Printer:</strong> A non‑impact printer that sprays tiny droplets of ink onto the paper. Produces high‑quality images and is common for home use.</li>
+        <li><strong>Laser Printer:</strong> A non‑impact printer that uses a laser beam to transfer toner onto paper. Fast, high‑quality, and cost‑effective for high volumes.</li>
+      </ul>
+    </li>
+    <li><strong>Speaker:</strong> Converts digital audio signals into audible sound.</li>
+  </ul>
+
+  <!-- 1.2.9 -->
+  <h3 id="sec2-9">1.2.9 Hardware Interfaces</h3>
+
+  <p>Hardware interfaces are the physical connections that allow different devices and components to communicate with the computer.</p>
+  <ul>
+    <li><strong>Parallel Port:</strong> An older interface that transmitted multiple bits of data simultaneously. Used for printers and scanners, but largely obsolete.</li>
+    <li><strong>Serial Port:</strong> An older interface that transmits data bit‑by‑bit in a single stream. Used for modems and mice, now mostly replaced by USB.</li>
+    <li><strong>USB (Universal Serial Bus):</strong> The industry standard for connecting a wide range of peripherals (keyboards, mice, printers, storage devices). Known for its plug‑and‑play capability and hot‑swapping.</li>
+    <li><strong>HDMI (High‑Definition Multimedia Interface):</strong> A digital interface used for transmitting high‑quality, uncompressed audio and video. It's the standard for connecting monitors, TVs, and projectors to computers and media players.</li>
+    <li><strong>Expansion Slots:</strong> Sockets on the motherboard that allow users to add extra functionality to the computer by installing expansion cards (e.g., graphics cards, sound cards, network cards).</li>
+  </ul>
+
+  <hr />
+  <p style="text-align: center; color: #666; font-size: 0.9rem; margin-top: 2rem;">— End of Chapter 1 —</p>
+
+</body>
+</html>
